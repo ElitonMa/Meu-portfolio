@@ -1,0 +1,54 @@
+#fundo-principal{
+    background-color: blanchedalmond;
+}
+
+#gostos-imagens {
+    border: 5px double rgb(251, 255, 0) ;
+    margin-left: 50px;
+    width: 13%;
+    flex-direction: row; 
+    float: right;
+}
+
+.canto-superior {
+    border: 1px double gray;
+    background-color: aliceblue;
+    position: absolute;
+    top: 10px;
+    left: 850px;
+}
+
+#texto-roblox {
+    display: block;
+    padding: 5px;
+    color: white;
+    background-color: none;
+    width: 200px;
+    height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#texto-cuphead {
+    display: block;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gostos {
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}

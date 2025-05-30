@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<script src="Principal-JS.JS"></script>
+<link rel="stylesheet" href="Cores.css">
+<link rel="stylesheet" href="Principal_CSS.css">
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principal</title>
+
+</head>
+
+<body id="fundo-principal">
+    <div>
+        <h1 class="header">Bem vindo ao meu primeiro site</h1>    
+    </div>
+    <p>
+        <div class="fundo-botoes">
+            <a class="botoes-link" href="Imagem de um gato.html"> <button class="botoes-topo" id="img-gato">  Imagem de um gato </button> </a> 
+            <a class="botoes-link" href="Imagem corvo.html"> <button class="botoes-topo" id="img-corvo">  Imagem de um corvo </button> </a> 
+            <a class="botoes-link" href="Imagem rinoceronte.html"> <button class="botoes-topo" id="img-rinoceronte">  Imagem de um rinoceronte </button> </a>
+            <span class="selecao-fundo">
+                <label for="cores-fundo">Escolha uma cor de fundo</label>
+                    <select name="cores-fundo" onchange="mudarCorBackground(this.value)" id="cores-de-fundo">
+                        <option value="blanchedalmond">Blanchedalmond</option>
+                        <option value="whitesmoke">Whitesmoke</option>
+                        <option value="burlywood">Burlywood</option>
+                        <option value="bisque">Bisque</option>
+                        <option value="black">Black</option>
+                    </select>
+            </span>
+            <a class="botoes-link" href="PAGINA-PARA-TESTES.html"> <button class= "botoes-topo">Pagina para teste</button> </a> 
+            <a class="botoes-link"> <button class="botoes-topo" id="inutil">Botão que faz nada</button> </a> 
+        </div>
+        <p></p>
+        <div class="fundo-2">
+            <div class="Texto">
+            Ola! Esta é minha primeira tentiva de um site usando HTML e CSS.
+            </div>
+            <br>    
+                <label id="gostos-label" for="gostos-imagens">Jogos que eu gosto</label>
+                <div class="gostos">
+                    <img id="gostos-imagens" src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/09/11/roblox-us3i6nb9g8kj.jpg"> 
+                            <div id="texto-roblox" onmouseover="mostrarTextoBox('texto-roblox')" onmouseout="naoMostrarTextoBox('texto-roblox')">
+                                Roblox é uma plataforma online onde usuários podem criar e compartilhar jogos e experiências em mundos 3D, sendo conhecida como a "Plataforma da Imaginação". Milhões de pessoas se reúnem para criar, imaginar e interagir em um universo virtual diversificado e em constante evolução. 
+                            </div>
+                    <img id="gostos-imagens" usemap="#imagem-minecraft"src="https://upload.wikimedia.org/wikipedia/pt/9/9c/Minecraft_capa.png">
+                            <div id="texto-minecraft" onmouseover="mostrarTextoBox('texto-minecraft')" onmouseout="naoMostrarTextoBox('texto-minecraft')">
+                                Minecraft é um jogo de sandbox e sobrevivência desenvolvido pela Mojang Studios, onde os jogadores exploram um mundo gerado proceduralmente, construído com blocos cúbicos, e interagem com ele de diversas formas. Os jogadores podem construir, minerar, explorar, e lutar contra criaturas hostis, com a possibilidade de jogar em modo singleplayer ou multijogador.
+                            </div>
+                    <img id="gostos-imagens" src="https://upload.wikimedia.org/wikipedia/en/4/48/Ultrakill_cover.png">
+                            <div id="texto-ultrakill" onmouseover="mostrarTextoBox('texto-ultrakill')" onmouseout="naoMostrarTextoBox('texto-ultrakill')">
+                                ULTRAKILL é um jogo de tiro em primeira pessoa de ritmo acelerado e ultraviolento, que combina a jogabilidade dos jogos de tiro clássicos com a ação e o estilo de pontuação dos jogos de ação de personagem. O jogador controla uma máquina, o V1, em um cenário pós-apocalíptico onde a humanidade foi extinta e as máquinas são o último vestígio da civilização. 
+                            </div>
+                </div>
+                <label id="gostos-label" for="gostos-imagens">Comidas que gosto</label>
+                <div class="gostos">
+                    <img id ="gostos-imagens" src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/09/27/dicas-para-preparar-massa.jpg" alt=  "imagem massa" id="gostos-imagens">
+                        <div id="texto-massa" onmouseover="mostrarTextoBox('texto-massa')" onmouseout="naoMostrarTextoBox('texto-massa')">  
+                            As massas alimentícias, como o espaguete e o macarrão, são ingredientes culinários feitos com massa de farinha, geralmente de trigo, a que se dá várias formas que depois são cozidas em água e servidas com diferentes molhos. São equivalentes ao min da culinária oriental ou ao cuscuz da culinária mediterrânica.
+                        </div>
+                    <img id ="gostos-imagens" src="https://media.istockphoto.com/id/535786572/pt/foto/sagital-bife-grelhado.jpg?s=612x612&w=0&k=20&c=h9JZuPdEFSGvdTZGl5IcYg4DsPLlB3x5CLsGKB341g8=" alt="imagem carne" id="gostos-imagens">
+                        <div id="texto-carne" onmouseover="mostrarTextoBox('texto-carne')" onmouseout="naoMostrarTextoBox('texto-carne')">  
+                            A carne, em termos de comida, refere-se aos tecidos musculares de animais, geralmente mamíferos ou aves, utilizados para consumo humano. Essa definição inclui, além do músculo, a gordura e tecido conjuntivo naturalmente presentes. A carne é uma fonte importante de proteína, vitaminas e minerais, sendo um alimento essencial em muitas culturas. 
+                        </div>
+                    <img id ="gostos-imagens" src="https://static.itdg.com.br/images/640-440/6f7fdb465853430be89fe9afbcf6049d/shutterstock-357940811.jpg" alt="imagem maionese" id="gostos-imagens">
+                        <div id="texto-maionese" onmouseover="mostrarTextoBox('texto-maionese')" onmouseout="naoMostrarTextoBox('texto-maionese')">  
+                            Salada russa é uma salada de legumes em cubos e outros alimentos associados com maionese. É chamada de "salada Olivier" na Rússia, Ucrânia, Irão e Estados Unidos. No Brasil, também é conhecida como "salada de maionese".
+                        </div>
+                </div>
+
+                <!--
+                <ul id="gostos">
+                    <label>Coisas que gosto</label>
+                    <li>Comida: Arroz, Maionese, Pizza, Salada, Brocolis, Massa e Carne de frango.</li>
+                    <li>Hobbies: Jogar, Desenhar, e Cantar.</li>
+                    <label>Coisas que odeio</label>
+                    <li>Calor.</li>
+                </ul> 
+                -->
+            <br>
+        <p></p>
+        
+        <form class="Formulario_login">
+            <div class="formulario-aparencia">
+                <div class="formulario-nome">
+                    Teste de login e email'
+            </div>
+            <div>
+                <p>
+                <div><label for="nome_usuario">Nome de usuário</label></div>
+                <input  type="text"  name="nome_usuario" onchange="verificarNome()" placeholder="nome" id="nome_usuario" >
+            </div>
+            <div>
+                <div><label for="senha_usuario">Senha de usuario</label></div>
+                <input type="password" name="senha_usuario" id="senha_usuario" placeholder="senha">
+            <div>
+            </div>
+                
+                <div><label for="email_usuario">Email</label></div>
+                <input type="email"  name="email_usuario" onchange="verificarEmail()" placeholder="testegmail@gmail.com" id="email_usuario">
+            </div>
+            <div>
+                <br>
+                <button type="button" name="registrar"  id="botao-registrar" onclick="registrarUsuario()" disabled="true">Registrar</button>
+                <div id="registro-popup" hidden="true"> Registrado com sucesso!</div>
+            </div>
+            </div>
+            
+        </form>
+    </div>
+        
+
+    <div><p><br></div>
+
+    <div class="fundo-2">
+        <h2 class="header2">Calculadora</h2>
+    <div class="fundo-calculadora">
+            <input type="input" id="resposta-calculadora" value="" disabled> 
+        <p>
+            <button class="botoes-calculadora" id="calculadora-1" onclick="pegarValorCalculadora('1')">1</button>
+            <button class="botoes-calculadora" id="calculadora-2" onclick="pegarValorCalculadora('2')">2</button>
+            <button class="botoes-calculadora" id="calculadora-3" onclick="pegarValorCalculadora('3')">3</button>
+            <button class="botoes-calculadora" id="calculadora-+" onclick="pegarValorCalculadora('+')">+</button>
+            <button class="botoes-calculadora" id="calculadora-4" onclick="pegarValorCalculadora('4')">4</button>
+            <button class="botoes-calculadora" id="calculadora-5" onclick="pegarValorCalculadora('5')">5</button>
+            <button class="botoes-calculadora" id="calculadora-6" onclick="pegarValorCalculadora('6')">6</button>
+            <button class="botoes-calculadora" id="calculadora--" onclick="pegarValorCalculadora('-')">-</button>
+            <button class="botoes-calculadora" id="calculadora-7" onclick="pegarValorCalculadora('7')">7</button>
+            <button class="botoes-calculadora" id="calculadora-8" onclick="pegarValorCalculadora('8')">8</button>
+            <button class="botoes-calculadora" id="calculadora-9" onclick="pegarValorCalculadora('9')">9</button>
+            <button class="botoes-calculadora" id="calculadora-9" onclick="pegarValorCalculadora('*')">*</button>
+            <button class="botoes-calculadora" id="calculadora-9" onclick="pegarValorCalculadora('0')">0</button>
+            <button class="botoes-calculadora" id="calculadora-9" onclick="pegarValorCalculadora('/')">/</button>
+            <button class="botoes-calculadora" id="calculadora-=" onclick="calcularValor()">=</button>
+            <button class="botoes-calculadora" id="calculadora-C" onclick="limparCalculadora()">C</button>
+    </div>
+
+
+
+    </div>   
+      
+</body>
+
+</html>

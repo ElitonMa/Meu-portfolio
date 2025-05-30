@@ -1,0 +1,87 @@
+.fundo-principal {
+    background-color: ivory;
+}
+
+.textos {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+#header {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#header2 {
+    text-align: center;
+    position:absolute;
+}
+
+.fundo-secundario {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 1000px;
+    height: 750px;
+    margin: auto;
+    border-radius: 50px;
+    text-align: start;
+    flex-wrap: wrap;
+    
+}
+
+.fundo-calculadora {
+    display: flex;
+    justify-content: center;
+    background-color: navajowhite;
+    width: 500px;
+    height: 500px;
+    margin: auto 250px auto 250px;
+    float: right;
+    border-radius: 50px;
+    text-align: start;
+    
+}
+
+.calculadora-inputs {
+    margin-top: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 50px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+#peso,#altura,#imc {
+    background-color: white;
+    width: 100%;
+}
+
+#calcular-IMC {
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px gray; 
+    cursor: pointer;
+}
+
+#calcular-IMC:active {
+    opacity: 0.8;
+}
+
+#texto-IMC {
+    color: blue;
+}
+
+#possibilidade-de-pesos {
+    background-color: rgb(253, 207, 138);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.textos-possibilidade {
+    color: blue;
+}

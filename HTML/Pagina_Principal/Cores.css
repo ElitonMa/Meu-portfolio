@@ -1,0 +1,45 @@
+
+.header {
+    background-color: rgb(235, 230, 230);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:cornflowerblue;
+}
+
+.Fundo {
+    background-color: blanchedalmond;
+}
+
+.Voltar {
+    background-color: whitesmoke;
+    float: right;
+    width: 320px;
+    height: 50px;
+    background-color: rgb(100, 205, 235);    
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(138, 136, 136);
+}
+
+.Voltar:active {
+    opacity: 0.5;
+}
+
+.Titulo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 5px 2px 1px rgb(216, 216, 216);
+}
+
+.Imagem_gato {
+    height: 720px;
+    width: 480px;
+}
+
+.Botao_para_gato {
+    width: 200px;
+    height: 50px;
+}

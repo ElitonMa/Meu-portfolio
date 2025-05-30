@@ -1,0 +1,240 @@
+
+#fundo-principal{
+    background-color: blanchedalmond;
+}
+
+.botoes-link{
+    text-decoration: none;
+}
+
+.botoes-topo {
+    display: inline;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(100, 205, 235); 
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(138, 136, 136);   
+}   
+
+.botoes-topo:active{
+    opacity: 0.5;
+}
+
+.header2 {
+    background-color: rgb(235, 230, 230);
+    text-align: center;
+    padding: 20px;
+    color: cornflowerblue;
+    display: inline-block;
+    padding-right: 325px;
+}
+
+#inutil {
+    float: right;
+}
+
+.Texto {
+    display: inline-flex;
+    text-align: left;
+    padding: 20px;
+}
+ 
+.formulario-nome{
+    background-color: rgb(50, 238, 175);
+    display:inline-block;
+    text-align: left;
+    border: 1px solid green;
+    padding-right: 30px;
+}
+
+.formulario-aparencia {
+    background-color: aquamarine;
+    display:inline-block;
+    margin-left: 800px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border: 2px double green;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 3px 2px 1px rgb(122, 230, 194);
+}
+
+#nome_usuario, #email_usuario, #senha_usuario {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: none;
+}   
+
+.header {
+    background-color: rgb(235, 230, 230);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:cornflowerblue;
+    box-shadow: 5px 2px 1px rgb(216, 216, 216);
+}
+
+#botao-registrar {
+    border-radius: 5px;
+    border: 1px solid rgb(138, 136, 136);
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
+#registro-popup {
+    background-color:rgb(103, 235, 138) ;
+    border: 1px solid gray;
+    border-top: 0px;
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+#botao-registrar:enabled {
+    background-color: rgb(103, 235, 138);
+    cursor: pointer;
+}
+
+#botao-registrar:active:enabled {
+    opacity: 0.8;
+}
+
+.fundo-2{
+    background-color: rgb(235, 230, 230);
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 1px rgb(216, 216, 216);
+}
+
+.fundo-botoes {
+    box-shadow: 5px 3px 3px rgb(146, 227, 250, 0.5); 
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(120, 219, 247, 0.8); 
+}
+
+.fundo-calculadora {
+    margin-left: 350px;
+    display: inline-flex;
+    flex-flow: column;
+    align-items: left;
+    background-color: rgb(134, 121, 250);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px rgb(140, 128, 247);
+    width: 210px;
+}
+
+.botoes-calculadora {
+    display: inline-block;
+    padding: 18px;
+    min-width: 23%;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.botoes-calculadora:active{
+    opacity: 0.8;
+}
+
+#resposta-calculadora{
+    background-color: rgb(117, 102, 250);
+    border: 1px solid black;
+    max-width: 100%;
+    color:whitesmoke;
+} 
+
+.gostos {
+    background-color: rgb(182, 177, 177);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#gostos-imagens {
+    border: 5px double rgb(251, 255, 0) ;
+    margin-left: 50px;
+    width: 18%;
+    flex-direction: row; 
+}
+
+#canto-superior-roblox {
+    border: 1px double gray;
+    background-color: orange;
+    font-weight:bold;
+    position: absolute;
+    top: 30px;
+    left: 226px;
+}
+
+#canto-superior-minecraft {
+    border: 1px double gray;
+    font-weight:bold;
+    background-color:green;
+    position: absolute;
+    top: 23px;
+    left: 739px;
+}
+
+#canto-superior-ultrakill {
+    border: 1px double gray;
+    background-color: gold;
+    font-weight:bold;
+    position: absolute;
+    top: 10px;
+    left: 1252px;
+}
+
+#gostos-label {
+    background-color: rgb(202, 200, 200);
+    padding: 5px;
+    font: normal 50px times;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#texto-roblox,#texto-minecraft,#texto-ultrakill,#texto-massa,#texto-carne,#texto-maionese{
+    display: block;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: none;
+    width: 200px;
+    height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.selecao-fundo {
+    display: inline-flex;   
+    background-color: rgb(100, 205, 235); 
+    border:  1px solid rgb(138, 136, 136); 
+    border-radius: 10px;
+    width: 300px;
+    height: 18px;
+    padding: 15px;
+}
+
+#cores-de-fundo {
+    background-color: gainsboro;
+    font-weight: bold;
+}

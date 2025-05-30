@@ -1,0 +1,32 @@
+.fundo-principal {
+    background-color: blanchedalmond;
+}
+
+.titulo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 5px 2px 1px rgb(216, 216, 216);
+
+}
+
+.imagem-corvo {
+
+    width: 500px;
+    height: 500px;
+}
+
+.voltar {
+    background-color: rgb(100, 205, 235);    
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(138, 136, 136);
+    width: 320px;
+    height: 50px;
+    float: right;
+}
+
+.voltar:active {
+    opacity: 0.5;
+}
