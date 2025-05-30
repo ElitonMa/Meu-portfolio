@@ -36,6 +36,7 @@
     padding: 15px;
     border-radius: 3px;
     color: black;    
+    cursor: pointer;
     justify-content: center;
 }
 
