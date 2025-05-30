@@ -1,0 +1,29 @@
+#fundo {
+    background-color: navajowhite;
+    background: linear-gradient(to right,navajowhite,blanchedalmond,navajowhite);
+}
+
+.container-grid {
+    display: grid;
+    padding: 10px;
+    width: 600px;
+    height: 47vw;
+    background-color: #f5deb4;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.upgrades {
+    padding: 30px;
+    background-color: #f1d39b;
+    border: 1px solid gray;
+    margin: 3px 100% 3px auto;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.imagens {
+    width: 128px;
+    height: 128px;
+}
