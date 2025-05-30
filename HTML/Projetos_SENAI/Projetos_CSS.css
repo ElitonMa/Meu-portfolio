@@ -1,5 +1,5 @@
 .fundo-principal {
-    background-color: ivory;
+    background-color: rgb(97, 153, 97)
 }
 
 .textos {
@@ -17,7 +17,25 @@
     position:absolute;
 }
 
-.fundo-secundario {
+.side-bar {
+    display: inline-flex;
+    position: absolute;
+    background-color: #f8d298;
+    margin-right: 80%;
+    border-radius: 25px;
+    justify-self: left;
+    text-align: left;
+    position:fixed;
+    width: 380px;
+    height: 50vw;
+    box-shadow: 2px 3px 9px black;
+}
+
+.side-bar-text {
+    margin: 10px 10px 0 10px;
+}
+
+.container-flex {
     display: flex;
     justify-content: center;
     background-color: antiquewhite;
@@ -27,7 +45,7 @@
     border-radius: 50px;
     text-align: start;
     flex-wrap: wrap;
-    
+    box-shadow: 3px 2px 15px black;
 }
 
 .fundo-calculadora {
@@ -40,7 +58,8 @@
     float: right;
     border-radius: 50px;
     text-align: start;
-    
+    border: 2px solid #f8d298;
+    box-shadow: 1px 2px 5px #f8d298;;
 }
 
 .calculadora-inputs {
