@@ -1,45 +1,70 @@
 #fundo-principal {
-    background-color: rgb(44, 44, 44);
+    background-color: #37474b;
 }
 
-.container {
+.container-navegacao {
     display: flex;
-    background-color: green;
-    box-shadow: 5px 3px 20px greenyellow;
-    justify-content:top;
+    background-color: #273746;
+    box-shadow: 5px 3px 20px #1c2833;
+    justify-content: center;
+    flex-direction: column;
     align-items:center;
-    flex-flow: column;    
-    width: 1000px;
-    height: 500px;
-    margin: 0px auto 0px auto;
+    flex-wrap: wrap;    
+    margin-left: 15px;
+    width: 99vw;
+    height: 170px;
+    margin: auto;
     border-radius: 50px;
+    position: fixed;
+}
+
+#header-navegacao {
     color: whitesmoke;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-    
 }
 
-.seletor-paginas {
-    background-color: rgb(3, 160, 3);
-    padding: 50px;
-    max-width: 50%;
-    max-height: 50%;
-    border: 1px solid rgb(25, 139, 2);
-    border-radius: 15px;
-    box-shadow: 5px 3px 5px rgb(25, 139, 2);
-}
-
-.botoes { 
-    display: inline-flex;
-    background-color: darkseagreen;
-    border: 1px inline black;
+.navegacao { 
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    background: #2c3e50;
     padding: 15px;
-    border-radius: 3px;
-    color: black;    
+    border-radius: 5px;
+    color: white;   
     cursor: pointer;
-    justify-content: center;
+    text-decoration: none;
+    margin: 5px;
 }
 
-.links {
-    text-decoration: none;
+.navegacao:active {
+    opacity: 0.8;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.container-inlineflex {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.teste {
+    padding: 50px 0 10vw 0;
+    margin: 190px 15px auto 15px;
+    border-radius: 15px;
+    background-color: #546e7a;
+    text-align: left
+}
+
+.teste-texto {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
 }

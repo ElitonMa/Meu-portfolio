@@ -7,13 +7,32 @@
     <link rel="stylesheet" href="Seletor-de-paginas_CSS.css">
 </head>
 <body id="fundo-principal">
-    <div class="container">
-        <h1>Selecione a pagina que deseja ir</h1>
-            <div class="seletor-paginas">
-                <a class="links" href="Pagina_Principal/Principal.html"> <button class="botoes" id="pagina-principal">Pagina principal</button> </a>
-                <a class="links" href="Projetos_SENAI/Projetos.html"> <button class="botoes" id="projetos-senai">Projetos feitos em sala</button> </a>
-                <a class="links" href="Clicker/Clicker.html"><button class="botoes" id="clicker">Cookie clicker</button></a>
-            </div>
+    <div class="container-navegacao">
+        <h1 id="header-navegacao">Selecione a pagina que deseja ir</h1>
+        
+        <nav> <!-- Utilizar nav, ul e li quando for fazer uma lista com links-->
+            <ul>
+                <li>
+                    <a class="navegacao" href="Pagina_Principal/Principal.html"> Pagina principal</a>
+                </li>
+                <li>
+                    <a class="navegacao" href="Projetos_SENAI/Projetos.html"> Projetos feitos em sala </a>
+                </li>
+                <li>
+                    <a class="navegacao" href="Clicker/Clicker.html"> Cookie clicker</a>
+                </li>
+            </ul>
+        </nav>
     </div>
+    
+    <div class="container-inlineflex">
+        <div class="teste">
+            <div class="teste-texto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vero animi expedita, placeat odio repellendus sit voluptatibus est sapiente perferendis, asperiores ipsum, obcaecati nobis at id vitae? Quaerat, numquam fugiat!
+                Modi tenetur provident odit. Velit aspernatur saepe corporis animi ullam magni fugiat illum asperiores ut est placeat odio veniam illo impedit harum voluptas dolorem inventore tempora porro magnam, quis expedita.
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -7,23 +7,52 @@
     display: grid;
     padding: 10px;
     width: 600px;
-    height: 47vw;
+    height: 100vh;
     background-color: #f5deb4;
     overflow: scroll;
     overflow-y: auto;
     overflow-x: auto;
 }
 
+.container-grid::-webkit-scrollbar { /* Tamanho da barra lateral*/
+    width: 5px;
+    height: 5px;
+}
+
+.container-grid::-webkit-scrollbar-thumb { /* Controla como a barra parece */
+    background-color: #566573;
+    border-radius: 15px;
+}
+
 .upgrades {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding: 30px;
     background-color: #f1d39b;
-    border: 1px solid gray;
     margin: 3px 100% 3px auto;
     max-width: 500px;
     min-width: 500px;
 }
 
+.upgrade-items {
+    border: 2px double gray;
+    display: flex;
+    align-items: top;
+}
+
+.botao-upgrade-items {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-upgrade-items:active {
+    background-color: #f3cb81;
+}
+
 .imagens {
     width: 128px;
     height: 128px;
+    object-fit: contain; /* Para que a imagem não tenha perca de qualidade*/
 }
