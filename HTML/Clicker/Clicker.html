@@ -11,7 +11,7 @@
     <div class="container-grid">
         <div class="upgrades">
             <div class="upgrade-items"> <!-- Separar cada um em uma div já que cada imagem é um bloco diferente-->
-                <button class="botao-upgrade-items" onclick="comprarPicareta()">
+                <button class="botao-upgrade-items" onclick="comprarPicareta()" id="upgrade-picareta">
                     <img src="https://cdn-icons-png.flaticon.com/512/664/664112.png" class="imagens" id="picareta" > 
                     <span>    
                         Uma picareta comum que você achou na loja talvez te ajude a minerar mais cookies.
@@ -19,67 +19,67 @@
                         Custo atual = <span id="custo-upgrade-picareta">25</span>
                     </span>
                     <span id="botao-upgrade-items-texto">
-                        +2 Cookies por click por cada picareta.
+                        +5 Cookies por click por cada picareta.
                         <p></p>
                         Quantidade de picaretas: <span id="quantidade-picareta">0</span>
                     </span>
                 </button>
             </div>
             <div class="upgrade-items" >
-                <button class="botao-upgrade-items" onclick="comprarFazenda()">
+                <button class="botao-upgrade-items" onclick="comprarFazenda()" id="upgrade-fazenda">
                     <img src="https://cdn-icons-png.flaticon.com/512/1620/1620071.png" class="imagens" id="fazenda" > 
                     <span>    
                         Uma fazenda barata que você achou a venda, talvez plantar cookies ira ajudar.
                     <p></p>
-                        Custo atual = <span id="custo-upgrade-fazenda">1250</span>
+                        Custo atual = <span id="custo-upgrade-fazenda">250</span>
                     </span>
                     <span id="botao-upgrade-items-texto">
-                        +10 Cookies por click por cada fazenda.
+                        +10 Cookies por segundo por cada fazenda.
                         <p></p>
                         Quantidade de fazendas: <span id="quantidade-fazenda">0</span>
                     </span>  
                 </button>
             </div>
             <div class="upgrade-items">
-                <button class="botao-upgrade-items" onclick="comprarFoguete()">
+                <button class="botao-upgrade-items" onclick="comprarFoguete()" id="upgrade-foguete">
                     <img src="https://cdn-icons-png.flaticon.com/512/7202/7202291.png" class="imagens" id="foguete" > 
                     <span>    
                         Você vai até a NASA e compra um foguete deles, talvez em outros planetas tera cookies.
                     <p></p>
-                        Custo atual = <span id="custo-upgrade-foguete">12500</span>
+                        Custo atual = <span id="custo-upgrade-foguete">1000</span>
                     </span>
                     <span id="botao-upgrade-items-texto">
-                        +250 Cookies por click por cada foguete.
+                        +25 Cookies por segundo por cada foguete.
                         <p></p>
                         Quantidade de foguetes: <span id="quantidade-foguete">0</span>
                     </span>  
                 </button>
             </div>
             <div class="upgrade-items">
-                <button class="botao-upgrade-items" onclick="comprarMagos()">
+                <button class="botao-upgrade-items" onclick="comprarMagos()" id="upgrade-mago">
                     <img src="https://cdn-icons-png.flaticon.com/512/3943/3943850.png" class="imagens" id="mago"> 
                     <span>    
                         Você contrata magos para fazerem cookies para você com magia, talvez de para vender por mais.
                     <p></p>
-                        Custo atual = <span id="custo-upgrade-mago">50000</span>
+                        Custo atual = <span id="custo-upgrade-mago">5000</span>
                     </span>
                     <span id="botao-upgrade-items-texto">
-                        +500 Cookies por click por cada mago.
+                        +50 Cookies por segundo por cada mago.
                         <p></p>
                         Quantidade de magos: <span id="quantidade-mago">0</span>
                     </span>  
                 </button>
             </div>
             <div class="upgrade-items">
-                <button class="botao-upgrade-items" onclick="comprarMinas()">
+                <button class="botao-upgrade-items" onclick="comprarMinas()" id="upgrade-mina">
                     <img src="https://cdn-icons-png.flaticon.com/512/3924/3924877.png" class="imagens" id="mina"> 
                     <span>    
                         Com seu foguete você encontra uma mina cheia de cookies em marte, cada um vale uma fortuna.
                     <p></p>
-                        Custo atual = <span id="custo-upgrade-mina">125000</span>
+                        Custo atual = <span id="custo-upgrade-mina">12500</span>
                     </span>
                     <span id="botao-upgrade-items-texto">
-                        +1000 Cookies por click por cada mina.
+                        +100 Cookies por segundo por cada mina.
                         <p></p>
                         Quantidade de minas: <span id="quantidade-mina">0</span>
                     </span>  
@@ -90,9 +90,11 @@
         <div >
             <img src="https://www.pngarts.com/files/4/Cookie-PNG-Pic.png" alt="cookie" id="cookie" onclick="cookieClick()" >
             <div class="contador-cookies">
-                Cookies atuais: <span id="quantidade-cookies">0</span>
+                Cookies atuais: <span id="quantidade-cookies">30000</span>
                 <p></p>
                 Cookies por click: <span id="cookies-por-click">1</span>
+                <p></p>
+                Cookies por segundo: <span id="cookies-por-segundo">0</span>
             </div>
         </div>
     </div>

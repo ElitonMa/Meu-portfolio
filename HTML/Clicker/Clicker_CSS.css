@@ -67,10 +67,11 @@
 .contador-cookies {
     position: absolute;
     top: 1vh;
-    right: 50vh;  
+    right: 43vh;  
     padding: 5px;
     background-color: #f1d39b; 
     border-radius: 15px;
+    padding-right: 50px;
 }
 
 #cookie {
@@ -95,5 +96,4 @@
     to {
         transform: rotate(360deg);
     }
-
 }
