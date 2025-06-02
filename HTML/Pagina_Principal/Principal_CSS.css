@@ -173,33 +173,6 @@
     flex-direction: row; 
 }
 
-#canto-superior-roblox {
-    border: 1px double gray;
-    background-color: orange;
-    font-weight:bold;
-    position: absolute;
-    top: 30px;
-    left: 226px;
-}
-
-#canto-superior-minecraft {
-    border: 1px double gray;
-    font-weight:bold;
-    background-color:green;
-    position: absolute;
-    top: 23px;
-    left: 739px;
-}
-
-#canto-superior-ultrakill {
-    border: 1px double gray;
-    background-color: gold;
-    font-weight:bold;
-    position: absolute;
-    top: 10px;
-    left: 1252px;
-}
-
 #gostos-label {
     background-color: rgb(202, 200, 200);
     padding: 5px;
