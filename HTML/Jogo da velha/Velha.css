@@ -14,7 +14,7 @@
 .container-quadrados {
     display: flex;
     display: grid;
-    background-color: rgb(76, 85, 85);
+    background-color: none;
     height: 30vh;
     width: 15vw; 
     grid-template-columns: repeat(3, 1fr);
@@ -30,7 +30,5 @@
     border: 1px solid gray;
     font-size: 80px;
     color: white;
-    border-left: 0;
-    border-bottom: 0;
     background: none;
 }
