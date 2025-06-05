@@ -9,7 +9,8 @@
 </head>
 <body id="fundo-principal">
     <div class="container-quadrados">
-        <button class="quadrados quadrado-1" id="mostrar1" onclick="fazerJogada('quadrado-1')" onmouseover="mostrarJogadorAtual('mostrar1')"></button>
+        <button class="quadrados temp-1 quadrado-1" onclick="fazerJogada('.temp-1','#jogada1','.quadrado-1')" onmouseover="mostrarJogadorAtual('.temp-1','#jogada1')"></button>
+        <div name="valor" id="jogada1" hidden></div>
         <button class="quadrados" id="mostrar2" id="2"></button>
         <button class="quadrados" id="mostrar3" id="3"></button>
 
