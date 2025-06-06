@@ -1,0 +1,25 @@
+.botoes-container {
+    display: flex;  
+    flex-direction: column;
+    float: right;
+    margin-top: 25vh;
+}
+
+.botoes {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes:hover {
+    opacity: 0.8;
+}
+
+.imagens {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
