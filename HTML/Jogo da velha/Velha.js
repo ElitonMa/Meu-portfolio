@@ -1,7 +1,6 @@
 let rodadaAtual = 0;
 let jogadorAtual;
 
-
 function incrementarRodada () {
     rodadaAtual++;
 }
@@ -65,25 +64,91 @@ function fazerJogada (temporario, idReal, quadrado) {
 }
 
 function verificacaoDeVitoria() {
+    let slideIn = document.querySelector(".slide-in");
+    let quemGanhou = document.getElementById("ganhador");
 
     let quadrado1 = document.querySelector(".quadrado-1").textContent;
     let quadrado2 = document.querySelector(".quadrado-2").textContent;
     let quadrado3 = document.querySelector(".quadrado-3").textContent;
+
     let quadrado4 = document.querySelector(".quadrado-4").textContent;
     let quadrado5 = document.querySelector(".quadrado-5").textContent;
     let quadrado6 = document.querySelector(".quadrado-6").textContent;
+
     let quadrado7 = document.querySelector(".quadrado-7").textContent;
     let quadrado8 = document.querySelector(".quadrado-8").textContent;
     let quadrado9 = document.querySelector(".quadrado-9").textContent;
 
     if (quadrado1 === quadrado2 && quadrado2 === quadrado3 && quadrado3 === quadrado1) {
-        alert(quadrado3 + " GANHOU!");
+        quemGanhou.textContent = quadrado1;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+        
     }
     if (quadrado4 === quadrado5 && quadrado5 === quadrado6 && quadrado6 === quadrado4) {
-        alert(quadrado6 + " GANHOU!");
+        quemGanhou.textContent = quadrado4;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
     }
-    if (quadrado7 === quadrado8 && quadrado8 === quadrado9 && quadrado9 === quadrado4) {
-        alert(quadrado9 + " GANHOU!");
+    if (quadrado7 === quadrado8 && quadrado8 === quadrado9 && quadrado9 === quadrado7) {
+        quemGanhou.textContent = quadrado7;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
     }
 
+    if (quadrado1 === quadrado4 && quadrado4 === quadrado7 && quadrado7 === quadrado1) {
+        quemGanhou.textContent = quadrado1;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
+
+    if (quadrado2 === quadrado5 && quadrado5 === quadrado8 && quadrado8 === quadrado2) {
+        quemGanhou.textContent = quadrado2;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
+
+    if (quadrado3 === quadrado6 && quadrado6 === quadrado9 && quadrado9 === quadrado3) {
+        quemGanhou.textContent = quadrado3;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
+
+    if (quadrado1 === quadrado5 && quadrado5 === quadrado9 && quadrado9 === quadrado1) {
+        quemGanhou.textContent = quadrado1;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
+
+    if (quadrado3 === quadrado5 && quadrado5 === quadrado7 && quadrado7 === quadrado3) {
+        quemGanhou.textContent = quadrado3;
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
 }
+
+function limparVelha () {
+    let esconderTela = document.querySelector(".tela-de-vitoria");
+
+    document.querySelector(".quadrado-1").textContent = " ";
+    document.querySelector(".quadrado-2").textContent = " ";
+    document.querySelector(".quadrado-3").textContent = " ";
+    document.querySelector(".quadrado-4").textContent = " ";
+    document.querySelector(".quadrado-5").textContent = " ";
+    document.querySelector(".quadrado-6").textContent = " ";
+    document.querySelector(".quadrado-7").textContent = " ";
+    document.querySelector(".quadrado-8").textContent = " ";
+    document.querySelector(".quadrado-9").textContent = " ";
+    document.querySelector("#jogada1").textContent = "a";
+    document.querySelector("#jogada2").textContent = "b";
+    document.querySelector("#jogada3").textContent = "c";
+    document.querySelector("#jogada4").textContent = "d";
+    document.querySelector("#jogada5").textContent = "e";
+    document.querySelector("#jogada6").textContent = "f";
+    document.querySelector("#jogada7").textContent = "g";
+    document.querySelector("#jogada8").textContent = "h";
+    document.querySelector("#jogada9").textContent = "i";
+
+    esconderTela.hidden = true; 
+}
+
