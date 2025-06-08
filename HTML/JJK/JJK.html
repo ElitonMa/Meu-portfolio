@@ -10,19 +10,51 @@
 <body>
 
     <div class="container">
-        <div class="fundo-imagem"> 
+        <div id="fundo-imagem"> 
             <div class="texto-container">
                 <div class="texto-habilidades">
-                    <h1>Titulo exemplo Titulo exemplo</h1>
-                    Exemplo de texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda iusto minima quisquam reiciendis. Harum odit, placeat obcaecati quidem voluptatum modi ut blanditiis amet possimus laboriosam! Iste, autem. Ducimus, voluptate.
+                    <div id="energia">
+                        <button class="botoes"> <img src="https://cdna.artstation.com/p/assets/images/images/075/357/928/large/yasir-w-dosri-yuji.jpg?1714389060" alt="" title="Black Flash" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="2" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="3" class="imagens-habilidades" ></button>
+                    </div>
+                    <div id="yuji" hidden>
+                        <button class="botoes"> <img src="https://pbs.twimg.com/media/GLsJ4B5WUAABxRr.jpg:large" alt="1" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="https://i.ytimg.com/vi/UIy_Fxo2RQg/maxresdefault.jpg" alt="2" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="https://preview.redd.it/blood-manipulation-by-v0-t8i8lmvr6rjc1.jpeg?width=640&crop=smart&auto=webp&s=860b835236560bdc488a2bbab7ea38414ad0af60" alt="3" class="imagens-habilidades" ></button>
+                    </div>
+                    <div id="gojo" hidden>
+                        <button class="botoes"> <img src="" alt="1" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="2" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="3" class="imagens-habilidades" ></button>
+                    </div>
+                    <div id="nanami" hidden>
+                        <button class="botoes"> <img src="" alt="1" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="2" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="3" class="imagens-habilidades" ></button>
+                    </div>
+                    <div id="toji" hidden>
+                        <button class="botoes"> <img src="" alt="1" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="2" class="imagens-habilidades" ></button>
+                        <button class="botoes"> <img src="" alt="3" class="imagens-habilidades" ></button>
+                    </div>
+                    <h1 id="habilidades-header"> Energia Amaldiçoada </h1>
+                    <span id="texto-informacao">
+                        É um tipo de energia espiritual que vaza dos humanos como resultado de emoções negativas, compõe os corpos de espíritos amaldiçoados e é usada por feiticeiros e espíritos amaldiçoados para realizar feitiços. 
+                    </span>
                 </div>
             </div>
             <div class="botoes-container">
-                <button class="botoes"><img src="https://staticg.sportskeeda.com/editor/2024/03/c8d99-17104238470774-1920.jpg" alt="Yuji Itadori" class="imagens"></button>
 
-                <button class="botoes"><img src="https://criticalhits.com.br/wp-content/uploads/2021/09/Satoru_Gojo_arrives_on_the_battlefield_Anime.png" alt="Gojo Satoru" class="imagens"></button>
-                <button class="botoes"><img src="https://tse1.mm.bing.net/th/id/OIP.NqHS5TnJgHIwgb0TOD5cYgHaHa?r=0&rs=1&pid=ImgDetMain" alt="Nanami" class="imagens"></button>
-                <button class="botoes"><img src="https://criticalhits.com.br/wp-content/uploads/2021/06/thumb-1920-1134715.jpg" alt="Toji Fushiguro" class="imagens"></button>
+                <buton class="botoes" onclick="mudarParaEnergia()"><img src="https://pm1.aminoapps.com/9003/bb722312d9736926560d01da5f97ce804bee9eber1-512-287v2_00.jpg" alt="Cursed Energy" title="Cursed Energy" class="imagens"></buton>
+
+                <button class="botoes" onclick="mudarParaYuji()"><img src="https://staticg.sportskeeda.com/editor/2024/03/c8d99-17104238470774-1920.jpg" alt="Yuji Itadori" title="Yuji Itadori" class="imagens"></button>
+
+                <button class="botoes" onclick="mudarParaGojo()"><img src="https://criticalhits.com.br/wp-content/uploads/2021/09/Satoru_Gojo_arrives_on_the_battlefield_Anime.png" alt="Gojo Satoru" title="Gojo Satoru"  class="imagens"></button>
+
+                <button class="botoes" onclick="mudarParaNanami()"><img src="https://tse1.mm.bing.net/th/id/OIP.NqHS5TnJgHIwgb0TOD5cYgHaHa?r=0&rs=1&pid=ImgDetMain" alt="Nanami Kento" title="Nanami Kento"  class="imagens"></button>
+
+                <button class="botoes" onclick="mudarParaToji()"><img src="https://criticalhits.com.br/wp-content/uploads/2021/06/thumb-1920-1134715.jpg" alt="Toji Fushiguro" title="Toji Fushiguro"  class="imagens"></button>
             </div>
         </div>
     </div>
