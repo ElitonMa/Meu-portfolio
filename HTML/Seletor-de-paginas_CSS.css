@@ -37,6 +37,10 @@
     margin: 5px;
 }
 
+.navegacao:hover {
+    transform: scale(1.05);
+}
+
 .navegacao:active {
     opacity: 0.8;
 }
