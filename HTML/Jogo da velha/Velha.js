@@ -59,6 +59,7 @@ function fazerJogada (temporario, idReal, quadrado) {
     
     document.querySelector(`${quadrado}`).textContent = jogadaTexto;
 
+    console.log(rodadaAtual);
     verificacaoDeVitoria();
     incrementarRodada(); 
 }
@@ -79,49 +80,54 @@ function verificacaoDeVitoria() {
     let quadrado8 = document.querySelector(".quadrado-8").textContent;
     let quadrado9 = document.querySelector(".quadrado-9").textContent;
 
+    if (rodadaAtual === 8) {
+        quemGanhou.textContent = 'Ninguem ganhou :(';
+        slideIn.hidden = false;
+        slideIn.style.animationPlayState = 'running';
+    }
     if (quadrado1 === quadrado2 && quadrado2 === quadrado3 && quadrado3 === quadrado1) {
-        quemGanhou.textContent = quadrado1;
+        quemGanhou.textContent = 'A letra ' + quadrado1 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
         
     }
     if (quadrado4 === quadrado5 && quadrado5 === quadrado6 && quadrado6 === quadrado4) {
-        quemGanhou.textContent = quadrado4;
+        quemGanhou.textContent = 'A letra ' + quadrado4 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
     if (quadrado7 === quadrado8 && quadrado8 === quadrado9 && quadrado9 === quadrado7) {
-        quemGanhou.textContent = quadrado7;
+        quemGanhou.textContent ='A letra ' + quadrado7 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
 
     if (quadrado1 === quadrado4 && quadrado4 === quadrado7 && quadrado7 === quadrado1) {
-        quemGanhou.textContent = quadrado1;
+        quemGanhou.textContent = 'A letra ' + quadrado1 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
 
     if (quadrado2 === quadrado5 && quadrado5 === quadrado8 && quadrado8 === quadrado2) {
-        quemGanhou.textContent = quadrado2;
+        quemGanhou.textContent = 'A letra ' + quadrado2 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
 
     if (quadrado3 === quadrado6 && quadrado6 === quadrado9 && quadrado9 === quadrado3) {
-        quemGanhou.textContent = quadrado3;
+        quemGanhou.textContent = 'A letra ' + quadrado3 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
 
     if (quadrado1 === quadrado5 && quadrado5 === quadrado9 && quadrado9 === quadrado1) {
-        quemGanhou.textContent = quadrado1;
+        quemGanhou.textContent = 'A letra ' + quadrado1 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
 
     if (quadrado3 === quadrado5 && quadrado5 === quadrado7 && quadrado7 === quadrado3) {
-        quemGanhou.textContent = quadrado3;
+        quemGanhou.textContent = 'A letra ' + quadrado3 + ' ganhou a partida!';
         slideIn.hidden = false;
         slideIn.style.animationPlayState = 'running';
     }
@@ -129,6 +135,7 @@ function verificacaoDeVitoria() {
 
 function limparVelha () {
     let esconderTela = document.querySelector(".tela-de-vitoria");
+    rodadaAtual = 0;
 
     document.querySelector(".quadrado-1").textContent = " ";
     document.querySelector(".quadrado-2").textContent = " ";

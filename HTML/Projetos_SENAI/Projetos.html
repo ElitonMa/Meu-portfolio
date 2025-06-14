@@ -5,51 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Senai</title>
-    <!--
-    == Comandos para o git ==
-    git add --all
-    git commit -m"teste"
-    git push origin "main"
-    -->
 </head>
-<body class="fundo-principal">
-    <script src="Projetos_JS.js"></script>
-    <div class="side-bar">
-        <div class="side-bar-text">
-            Bem vindo aos projetos que fiz no SENAI <br>
-            Cada container representa um projeto diferente feito em sala de aula
-        </div>
-        <p>
+<body id="fundo-principal">
+    <div class="navegacao-container">
+        <h1 id="header-navegacao">Selecione o projeto que deseja conhecer</h1>
+        
+        <nav> <!-- Utilizar nav, ul e li quando for fazer uma lista com links-->
+            <ul>
+                <li>
+                    <a class="navegacao-botoes" href="/HTML/Seletor-de-paginas.html" title="Inicio"> Voltar para o inicio</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="container-flex">
-        <div class="textos">
-            <h1 id="header">Site para os projetos do SENAI</h1>
-            <div class="fundo-calculadora">
-                <h2 id="header2">Bem vindo a calculadora de IMC</h2>
-                <div class="calculadora-inputs">
-                    <label id="texto-IMC" for="peso">Peso (KG) </label>
-                    <input type="number" id="peso" placeholder="Ex: 60">
-                    <p>
-                    <label id="texto-IMC" for="altura">Altura (M)</label>
-                    <input type="number" id="altura" placeholder="Ex: 1.65">
-                    <p>
-                    <button id="calcular-IMC" onclick="calcularIMC()">Calcular IMC</button>
-                    <p>
-                    <label id="texto-IMC" for="imc">Valor do IMC</label>
-                    <input type="number" id="imc" disabled step="0.01"> 
-                    <div id="possibilidade-de-pesos">
-                        <div class="textos-possibilidade">
-                            Grau de saude
-                            <div id="grau-saude"></div>
-                        </div>
-                    </div>
-                </div>
+
+    <div class="container-grid">
+        <div class="projetos">
+            <img src="https://caloriaspordia.com/wp-content/uploads/2020/10/indice_massa_corporal.gif" alt="Categorias IMC">
+            <div class="projetos-descricao">
+                <h3>Calculadora de IMC</h3>
+                A calculadora de IMC como o nome diz calcula o seu IMC. 
+                <br> 
+                O IMC é uma medida usada para saber em que categoria você se encaixa, podendo ser: Magreza, Normal, Sobrepeso, Obesidade e Obesidade grave.
             </div>
-        </div> 
+            <a class="projetos-botao" href="Calculadora_IMC/Calculadora.html"><span class="botao-texto">Conhecer Projeto</span></a>
+        </div>
+        <div class="projetos">
+            <img src="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg" alt="">
+            <div class="projetos-descricao">
+                <h3>Lorem Ipsum</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius recusandae molestiae! Ab voluptas quaerat quis. Obcaecati placeat perspiciatis ab cupiditate atque dolores ducimus eligendi. Soluta labore dolor voluptatibus rerum.
+            </div>
+            <a class="projetos-botao" href=""><span class="botao-texto">Conhecer Projeto</span></a>
+        </div>
+        <div class="projetos">
+            <img src="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg" alt="">
+            <div class="projetos-descricao">
+                <h3>Lorem Ipsum</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum ducimus hic, sit facere neque similique nam sunt, dolorem nulla unde, tempore ullam. Culpa, vitae blanditiis magnam nisi eum recusandae.
+            </div>
+            <a class="projetos-botao" href=""><span class="botao-texto">Conhecer Projeto</span></a>
+        </div>
     </div>
-<br>
-    <div class="container-flex">
-       
-    </div>  
+    <script src="Projetos_JS.js" async></script>
 </body>
 </html>
