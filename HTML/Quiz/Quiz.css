@@ -136,6 +136,7 @@ button:active {
     align-items: center;
     background-color: #4C1E4F;
     grid-area: questao;
+    color: white;
 }
 
 #quiz-C > img {
@@ -145,8 +146,9 @@ button:active {
     align-content: center;
     background-color: #7C7C7C;
     object-fit: contain;
-    width: 20vw;
-    padding: 0 40vw 0 40vw;
+    width: 30vw;
+    height: 40vh;
+    padding: 0 35vw 0 35vw;
 }
 
 .botoes-C {
@@ -178,27 +180,4 @@ button:active {
 #quiz-C :nth-child(6) {
     background-color: #F44174;
     grid-area: direita-b;
-}
-
-.seta-avancar {
-    position: absolute;
-    left: 95%;
-    right: 50%;
-    top: 40%;
-}
-
-.bxs-arrow-big-right {
-    transform: scale(10);
-}
-
-.botao-seta {
-    cursor: pointer;
-}
-
-.botao-seta:hover {
-    transform: scale(1.05);
-}
-
-.botao-seta:active {
-    opacity: 0.8;
 }
