@@ -13,24 +13,29 @@
         <div class="titulo">
             <h1>Bem-vindo aos meus quizes</h1>
             Aqui você encontrará diversos quizes para testar seu conhecimento!
+            
+        </div>
+        <div class="registrar-login">
+            <button class="botoes-login">Sign in</button>
+            <button class="botoes-login">Log in</button>
         </div>
         <div class="selecao-quiz-titulo">
             Escolha o quiz que deseja fazer!
         </div>
         <div class="selecao-quiz">
-            <button class="botoes">C</button>
+            <button class="botoes" onclick="aparecerQuiz('quiz-C')">C</button>
             <button class="botoes">HTML</button>
             <button class="botoes">CSS</button>
             <button class="botoes">JAVASCRIPT</button>
         </div>
     </div>
-    <div class="quiz-C">
-        <h1 id="pergunta-C">Pergunta questão</h1>
+    <div id="quiz-C">
+        <h1 id="pergunta-C"></h1>
         <img src="https://oystr.com.br/wp-content/webp-express/webp-images/uploads/2022/08/placeholder.png.webp" alt="">
-        <button class="botoes-C" onclick="mudarPergunta()">Resposta 1</button>
-        <button class="botoes-C">Resposta 2</button>
-        <button class="botoes-C">Resposta 3</button>
-        <button class="botoes-C">Resposta 4</button>
+        <button class="botoes-C" id="pergunta-1-C" onclick="responderPerguntaC(1)"></button>
+        <button class="botoes-C" id="pergunta-2-C" onclick="responderPerguntaC(2)"></button>
+        <button class="botoes-C" id="pergunta-3-C" onclick="responderPerguntaC(3)"></button>
+        <button class="botoes-C" id="pergunta-4-C" onclick="responderPerguntaC(4)"></button>
         <div class="seta-avancar"><button class="botao-seta"><i class='bx  bxs-arrow-big-right'></i></button></div>
     </div>
 </body>

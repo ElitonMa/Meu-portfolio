@@ -28,6 +28,20 @@
     background-color: #B0B2B8;
 }
 
+.registrar-login {
+    grid-area: titulo;
+}
+
+.registrar-login > button {
+    background: #7D7E75;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin: 15px 5px auto 5px;
+}
+
 .selecao-quiz-titulo {
     grid-area: b;
     display: flex;
@@ -56,11 +70,15 @@
     height: 10vh;
     width: 15vw; 
     margin: 15px auto 15px auto;
+}
+
+button:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.botoes:hover {
-    transform: scale(1.05);
+button:active {
+    opacity: 0.8;
 }
 
 .selecao-quiz :nth-child(1) {
@@ -95,9 +113,9 @@
     grid-area: direita-b;
 }
 
-.quiz-C {
+#quiz-C {
     display: grid;
-    z-index: 0;
+    z-index: -1;
     background-color: #EEE5E9;
     position: absolute;
     bottom: 0;
@@ -111,7 +129,7 @@
     ;
 }
 
-.quiz-C > h1 {
+#quiz-C > h1 {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -120,7 +138,7 @@
     grid-area: questao;
 }
 
-.quiz-C > img {
+#quiz-C > img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,29 +156,26 @@
     margin: 15px auto 15px auto;
     cursor: pointer;
     border-radius: 15px;
+    font-size: 35px;
 }
 
-.botoes-C:hover {
-    transform: scale(1.05);
-}
-
-.quiz-C :nth-child(2) {
+#quiz-C :nth-child(2) {
     grid-area: imagem;
 }
 
-.quiz-C :nth-child(3) {
+#quiz-C :nth-child(3) {
     background-color: #B5A886;
     grid-area: esquerda-t;
 }
-.quiz-C :nth-child(4) {
+#quiz-C :nth-child(4) {
     background-color: #FEE1C7;
     grid-area: direita-t;
 }
-.quiz-C :nth-child(5) {
+#quiz-C :nth-child(5) {
     background-color: #FA7E61;
     grid-area: esquerda-b;
 }
-.quiz-C :nth-child(6) {
+#quiz-C :nth-child(6) {
     background-color: #F44174;
     grid-area: direita-b;
 }

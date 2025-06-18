@@ -60,16 +60,17 @@ ul {
 
 .container-inlineflex {
     display: inline-flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
 .descricao {
-    padding: 50px 0 10vw 0;
+    padding: 50px 0 100px 0;
     width: 100%;
     border-radius: 15px;
     background-color: #546e7a;
-    text-align: left
+    text-align: left;
+    justify-content: center;
 }
 
 .descricao-texto {
