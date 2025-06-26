@@ -26,3 +26,11 @@ function atualizarLista() {
     });
 
 }
+
+function limparLista() {
+  compras = [];
+  localStorage.removeItem("compras");
+  atualizarLista();
+}
+
+window.addEventListener("DOMContentLoaded", atualizarLista);
