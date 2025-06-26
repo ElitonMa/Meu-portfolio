@@ -90,6 +90,7 @@ button:hover {
     grid-area: q1;
     background-color: #4B8895;
     border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
 }
 
 .container-lista > h2 {
@@ -114,6 +115,7 @@ button:hover {
     border: 1px solid black;
     width: 90%;
     height: 100%;
-    margin: 4px;
+    margin: 7px;
     align-items: center;
+    box-shadow: 1px 1px 3px black;
 }
