@@ -14,3 +14,15 @@ function comprar() {
         }
         localStorage.setItem("compras", JSON.stringify(compras)); /* cria um item chamado compras para a nossa JSON, stringify converte uma variável de javascript para uma string JSON */
 }
+
+function atualizarLista() {
+    const lista = document.getElementById("listaCompras");
+    lista.innerHTML = "";
+
+    compras.forEach((item, i) => {
+        const li = document.createElement("li");
+        li.textContent = `${i + 1}. ${item}`;
+        lista.appendChild(li);
+    });
+
+}

@@ -42,15 +42,78 @@ body {
 
 .compras-fundo {
     grid-area: compras;
-    background-color: white;
+    background-color: #3A506B;
+    display: grid;
+    grid-template-areas: 
+    "botoes botoes"
+    "q1 q2"
+    "q3 q4"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr;
 }
 
-.side-bar > button {
-    background-color: #3A506B;
+.container-botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes {
+    background-color: #2b3c50;
     height: 50px;
-    width: 100px;
+    width: 140px;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     color: white;
+}
+
+.botoes-compras {
+    grid-area: botoes;
+    background-color: #2b3c50;
+    height: 50px;
+    width: 140px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.container-lista {
+    max-height: 300px;
+    overflow: auto;
+    grid-area: q1;
+    background-color: #4B8895;
+    border: 1px solid black;
+}
+
+.container-lista > h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container-lista::-webkit-scrollbar { /* Tamanho da barra lateral*/
+    width: 5px;
+    height: 5px;
+}
+
+.container-lista::-webkit-scrollbar-thumb { /* Controla como a barra parece */
+    background-color: #566573;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#listaCompras > li {
+    display: flex;
+    background-color: #5BC0BE;
+    border: 1px solid black;
+    width: 100px;
+    height: 35px;
+    margin: 4px;
+    align-items: center;
 }

@@ -9,12 +9,24 @@
 <body>
     <div class="container-grid">
         <div class="side-bar">
-            <button id="comprar" onclick="comprar()">Adicionar itens</button>
+            <div class="container-botoes">
+                <a href="/HTML/Projetos_SENAI/Projetos.html"><button class="botoes">Voltar</button></a>
+            </div>
         </div>
         <div class="nav">
-            <h1>Lista de compras</h1>
+            <h1>Site de compras</h1>
         </div>
         <div class="compras-fundo">
+            <div class="container-botoes">
+                <button class="botoes-compras" onclick="comprar()">Adicionar itens</button>
+                <button class="botoes-compras" onclick="atualizarLista()">Ver lista</button>
+                <button class="botoes-compras" onclick="limparLista()">Limpar lista</button>
+            </div>
+
+            <div class="container-lista">
+                <h2>Lista de compras</h2>
+                <div id="listaCompras"></div>
+            </div>
             
         </div>
     </div>
