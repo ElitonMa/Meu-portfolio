@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de compras</title>
     <link rel="stylesheet" href="Compras_CSS.css">
 </head>
 <body>
     <div class="container-grid">
         <div class="side-bar">
-            <div class="container-botoes">
-                <a href="/HTML/Projetos_SENAI/Projetos.html"><button class="botoes">Voltar</button></a>
-            </div>
+            
         </div>
         <div class="nav">
             <h1>Site de compras</h1>
+            <ul>
+                <li>
+                    <a href="/HTML/Projetos_SENAI/Projetos.html"><button class="botoes"><iconify-icon icon="formkit:arrowleft" height="40"></iconify-icon></button></a>
+                </li>
+            </ul>
+            
         </div>
         <div class="compras-fundo">
             <div class="container-botoes">
-                <button class="botoes-compras" onclick="comprar()">Adicionar itens</button>
-                <button class="botoes-compras" onclick="atualizarLista()">Ver lista</button>
-                <button class="botoes-compras" onclick="limparLista()">Limpar lista</button>
+                <button class="botoes-compras" onclick="comprarEscolha()"> <iconify-icon icon="fluent-mdl2:work-item" height="20"></iconify-icon> Adicionar itens </button>
+                <button class="botoes-compras" onclick="atualizarLista()"> <iconify-icon icon="mdi-light:eye" height="20"></iconify-icon> Ver listas </button>
+                <button class="botoes-compras" onclick="limparLista()"> <iconify-icon icon="tabler:trash" height="20"></iconify-icon> Limpar lista</button>
             </div>
 
             <div class="container-lista">
                 <h2>Lista de compras</h2>
                 <div id="listaCompras"></div>
             </div>
+            <div class="container-listaComidas">
+                <h2>Lista de comidas</h2>
+                <div id="listaComidas"></div>
+            </div>
+            <div class="container-listaBebidas">
+                <h2>Lista de bebidas</h2>
+                <div id="listaBebidas"></div>
+            </div>
+            <div class="container-listaEssenciais">
+                <h2>Lista de essenciais</h2>
+                <div id="listaEssenciais"></div>
+            </div>
             
         </div>
     </div>
     <script src="Compras_JS.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </body>
 </html>
