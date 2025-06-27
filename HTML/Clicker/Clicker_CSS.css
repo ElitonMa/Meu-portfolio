@@ -97,3 +97,15 @@
         transform: rotate(360deg);
     }
 }
+
+#botao-voltar {
+    height: 50px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#botao-voltar:hover {
+    transform: scale(1.05);
+}
