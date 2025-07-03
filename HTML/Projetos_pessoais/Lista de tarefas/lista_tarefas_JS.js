@@ -21,8 +21,9 @@ function adicionarElemento() {
 function tornarMudavel() {
     let contador = 0;
 
-    if (contador = 0) {
+    if (contador === 0) {
         contador++;
-        conteudo.contentEditable = true;
+        document.getElementById("conteudo").contentEditable = "true";
     }
+    else if (contador)
 }
