@@ -7,6 +7,23 @@
     background-color: #2C2A4A;
 }
 
+#voltar {
+    display: flex;
+    border-radius: 5px;
+    background-color: #282549;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    color: black;   
+}
+
+#voltar:hover {
+    transform: scale(1.05);
+}
+
 .container-flex {
     display: flex;
     justify-content: center;
@@ -57,4 +74,22 @@
 
 .container-calculadora > button:hover {
     transform: scale(1.05);
+}
+
+.container-classificacao {
+    background-color: #DABFFF;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px 0 25px 0;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    text-align: center;
+    flex-flow: row;
+}
+
+.container-classificacao > span {
+    margin-left: 15px;
+    align-self: center;
+    font-size: large;
 }

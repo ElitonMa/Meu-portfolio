@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Calculadora_CSS.css">
 </head>
 <body id="fundo-principal">
-
+    <a href="/HTML/Projetos_SENAI/Projetos.html" id="voltar"><iconify-icon icon="formkit:arrowleft" height="40"></iconify-icon></a>
     <div class="container-flex">
         <div class="fundo-calculadora">
             <div class="container-calculadora">
@@ -15,16 +15,21 @@
                 <br>
                 <label for="peso">Peso (KG)</label>
                 <br>
-                <input type="number" placeholder="1.65" class="input-imc" id="peso">
+                <input type="number" placeholder="65" class="input-imc" id="peso">
                 <br>
                 <label for="altura">Altura (M)</label>
                 <br>
-                <input type="number" placeholder="65" class="input-imc" id="altura">
+                <input type="number" placeholder="1.65" class="input-imc" id="altura">
                 <br>
-                <button>Calcular IMC</button>
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                <div class="container-classificacao">
+                    <span id="imc"></span>
+                    <span id="grau-saude"></span>
+                </div>
             </div>
         </div>
     </div>
-
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="Calculadora_JS.js"></script>
 </body>
 </html>
