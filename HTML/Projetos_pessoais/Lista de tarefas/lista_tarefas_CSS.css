@@ -11,9 +11,11 @@ iconify-icon {
 
 #fundo-principal {
     background-color: #D5BDAF;
+    
 }
 
 #container-lista {
+    
     display: grid;
     grid-template-columns: 1fr;
     display: flex;
@@ -24,13 +26,14 @@ iconify-icon {
 
 #fundo-lista {
     display: flex;
+    overflow: auto;
     background-color: #F5EBE0;
     height: 70vh;
     width: 30vw;
     box-shadow: 2px 3px 5px black;
     border-radius: 15px;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .item-lista {
@@ -38,7 +41,7 @@ iconify-icon {
     height: 100px;
     width: 25vw;
     flex-flow: column;
-    margin: 15px 0 15px 0;
+    margin: 15px auto 15px auto;
 }
 
 .item-lista > label {
@@ -49,8 +52,20 @@ iconify-icon {
     height: 20px;
 }
 
+.item-lista > div {
+    border: 2px solid black;   
+}
 
-#conteudo {
-    border: 2px solid black;
-    
+#adicionar-elemento,#mudar-texto {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#adicionar-elemento:hover,#mudar-texto:hover {
+    transform: scale(1.05);
+}
+
+#adicionar-elemento:active,#mudar-texto:active {
+    opacity: 0.8;
 }
