@@ -37,7 +37,8 @@ body {
     display: flex;
     color: white;
     font-weight: bold;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .nav > ul > li {
@@ -163,4 +164,19 @@ button:hover {
     width: 90%;
     height: 100%;
     margin-bottom: 5px;
+}
+
+.side-bar > ul > li > span, iconify-icon {
+    color: white;
+}
+
+#lista-icones {
+    display: flex;
+    flex-flow: column;
+    margin: 50% 0 0 20px;
+    font-size: 40px;
+}
+
+#lista-icones > li {
+    margin-top: 15px;
 }
