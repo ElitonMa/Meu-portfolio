@@ -51,6 +51,12 @@ a {
     transform: scale(1.05);
 }
 
+.navegacao-botoes > iconify-icon {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
 ul {
     display: flex;
     list-style: none;

@@ -57,3 +57,10 @@ ul {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
+.container-navegacao > ul > li > a > iconify-icon {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+}
