@@ -9,13 +9,16 @@
 <body id="fundo-principal">
     <div id="container-lista">
         <div id="fundo-lista">
-            <iconify-icon icon="ic:baseline-plus" height="46" id="adicionar-elemento" onclick="adicionarElemento()"></iconify-icon>
-            <br>
-            <iconify-icon icon="mingcute:pencil-2-line" height="36" onclick="tornarMudavel()" id="mudar-texto"></iconify-icon>
+            <div class="container-flex">
+                <iconify-icon icon="ic:baseline-plus" height="40" id="adicionar-elemento" onclick="adicionarElemento()"></iconify-icon>
+                <iconify-icon icon="mingcute:pencil-2-line" height="36" onclick="tornarEditavel()" id="mudar-texto-desativado"></iconify-icon>
+                <iconify-icon icon="mingcute:pencil-2-fill" height="36" onclick="tornarEditavel()" id="mudar-texto-ativado" style="display: none;"></iconify-icon>
+            </div>
+            <h1>Lista de tarefas</h1>
             <div class="item-lista">
-                <label for="titulo">Titulo exemplo</label>
+                <label for="titulo" id="label0">Titulo exemplo</label>
                 <br>
-                <div id="conteudo">Exemplo de conteudo</div>
+                <div id="conteudo0">Exemplo de conteudo</div>
             </div>
             
         </div>

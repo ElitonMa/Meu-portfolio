@@ -4,18 +4,16 @@
 }
 
 iconify-icon {
- display: inline-block;
- width: 1em;
- height: 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
 }
 
 #fundo-principal {
     background-color: #D5BDAF;
-    
 }
 
 #container-lista {
-    
     display: grid;
     grid-template-columns: 1fr;
     display: flex;
@@ -42,6 +40,7 @@ iconify-icon {
     width: 25vw;
     flex-flow: column;
     margin: 15px auto 15px auto;
+    overflow:auto;
 }
 
 .item-lista > label {
@@ -49,11 +48,11 @@ iconify-icon {
 }
 
 .item-lista > label,div {
-    height: 20px;
+    height: auto;
 }
 
 .item-lista > div {
-    border: 2px solid black;   
+    border: 2px solid black;
 }
 
 #adicionar-elemento,#mudar-texto {
@@ -62,10 +61,25 @@ iconify-icon {
     cursor: pointer;
 }
 
-#adicionar-elemento:hover,#mudar-texto:hover {
+#adicionar-elemento:hover,#mudar-texto-desativado:hover,#mudar-texto-ativado:hover {
     transform: scale(1.05);
 }
 
-#adicionar-elemento:active,#mudar-texto:active {
+#adicionar-elemento:active,#mudar-texto-desativado:active,#mudar-texto-ativado:active {
     opacity: 0.8;
+}
+
+.container-flex {
+    display: flex;
+    height: 50px;
+}
+
+.container-flex > iconify-icon {
+    margin-left: 30px;   
+}
+
+#fundo-lista > h1 {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
 }
