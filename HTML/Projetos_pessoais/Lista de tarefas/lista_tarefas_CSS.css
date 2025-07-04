@@ -39,15 +39,16 @@ iconify-icon {
     height: 100px;
     width: 25vw;
     flex-flow: column;
-    margin: 15px auto 15px auto;
-    overflow:auto;
+    margin: 75px auto 75px auto;
 }
 
 .item-lista > label {
     font-size: xx-large;
+    width: 24vw;
+    overflow-wrap: break-word;
 }
 
-.item-lista > label,div {
+.item-lista > label, .item-lista > div {
     height: auto;
 }
 
@@ -55,11 +56,15 @@ iconify-icon {
     border: 2px solid black;
 }
 
-#adicionar-elemento,#mudar-texto-ativado,#mudar-texto-desativado {
+#adicionar-elemento {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 60px;   
+    margin-left: 26px;   
+}
+
+#mudar-texto-ativado,#mudar-texto-desativado {
+    margin-left: 52px;
 }
 
 #adicionar-elemento:hover,#mudar-texto-desativado:hover,#mudar-texto-ativado:hover {
@@ -68,11 +73,22 @@ iconify-icon {
 
 .container-flex {
     display: flex;
-    height: 50px;
+    height: 60px;
 }
 
 #fundo-lista > h1 {
     display: flex;
-    margin-top: 15px;
+    margin-top: 60px;
     justify-content: center;
+}
+
+#fundo-lista::-webkit-scrollbar-thumb {
+    background-color: #f3dcc4;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#fundo-lista::-webkit-scrollbar { /* Tamanho da barra lateral*/
+    width: 8px;
+    height: 5px;
 }
