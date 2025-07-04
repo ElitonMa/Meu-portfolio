@@ -23,7 +23,7 @@ function adicionarElemento() {
     lista.appendChild(conteudo);        
 }
 
-let pressionouEditar = false;
+let pressionouEditar = true;
 
 function tornarEditavel() {
     let lapisDesativado = document.getElementById("mudar-texto-desativado");
