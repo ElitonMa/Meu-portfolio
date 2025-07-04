@@ -56,24 +56,42 @@ iconify-icon {
     border: 2px solid black;
 }
 
-#adicionar-elemento {
+#adicionar-elemento, #mudar-texto-ativado, #mudar-texto-desativado {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 26px;   
+    margin-left: 8px;   
 }
 
 #mudar-texto-ativado,#mudar-texto-desativado {
     margin-left: 52px;
 }
 
-#adicionar-elemento:hover,#mudar-texto-desativado:hover,#mudar-texto-ativado:hover {
-    transform: scale(1.05);
-}
-
 .container-flex {
     display: flex;
     height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #F5EBE0;
+}
+
+.container-flex > a {
+    background-color: #f3dcc4;
+    margin-left: 50px;
+    height: 60px;
+    width: 100px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 15px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.container-flex > a > iconify-icon {
+   width: 100px;
+   height: 60px;
 }
 
 #fundo-lista > h1 {
