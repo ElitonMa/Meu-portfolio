@@ -118,3 +118,7 @@ button:hover, #botao-voltar:hover {
     align-content: center;
     margin-top: 10px;
 }
+
+#mostrar-senha {
+    margin-bottom: -20px;
+}
