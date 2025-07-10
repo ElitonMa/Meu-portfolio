@@ -35,7 +35,6 @@ function tornarEditavel() {
         let elementosConteudo = document.getElementById("conteudo" + `${i}`);
 
         if (i === quantidadeDeListas-1) {
-            
             pressionouEditar = !pressionouEditar;
         }
         if (pressionouEditar === false ) {
@@ -51,5 +50,4 @@ function tornarEditavel() {
             elementosLabel.contentEditable = "false";
         }
     }
-
 }
