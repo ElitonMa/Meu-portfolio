@@ -75,7 +75,8 @@ iconify-icon {
     background-color: #F5EBE0;
 }
 
-.container-flex > a {
+#botao-voltar {
+    position: absolute;
     background-color: #f3dcc4;
     margin-left: 50px;
     height: 60px;
@@ -87,9 +88,10 @@ iconify-icon {
     align-items: center;
     text-decoration: none;
     color: black;
+    top: 15px;
 }
 
-.container-flex > a > iconify-icon {
+#botao-voltar > iconify-icon {
    width: 100px;
    height: 60px;
 }
