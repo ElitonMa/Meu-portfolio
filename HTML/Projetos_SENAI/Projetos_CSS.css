@@ -1,5 +1,9 @@
+:root {
+    --fundo-projetos: #666A86;
+}
+
 #fundo-principal {
-    background-color: #0D1F2D;
+    background-color: #37474b;
 }
 
 a {
@@ -9,7 +13,7 @@ a {
 
 .navegacao-container {
     display: flex;
-    background-color: #546A7B;
+    background-color: #2c3e50;
     box-shadow: 5px 3px 20px #50697c;
     justify-content: center;
     flex-direction: column;
@@ -74,7 +78,7 @@ ul {
 }
 
 .projetos {
-    background-color: #666A86;
+    background-color: var(--fundo-projetos);
     border: 3px solid #788AA3;
     border-radius: 5px;
     overflow: hidden;

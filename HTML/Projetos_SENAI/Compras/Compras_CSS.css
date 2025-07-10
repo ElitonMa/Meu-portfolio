@@ -174,9 +174,10 @@ button:hover {
     display: flex;
     flex-flow: column;
     margin: 50% 0 0 20px;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 #lista-icones > li {
     margin-top: 15px;
+    list-style-type: none;
 }
