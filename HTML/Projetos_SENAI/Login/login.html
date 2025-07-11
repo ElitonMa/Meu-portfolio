@@ -11,21 +11,24 @@
     <div class="container-flex">
         <div class="container-login">
             <form>
-            <iconify-icon icon="mdi:user"></iconify-icon>
-            <label for="usuario">Nome</label>
-            <br>
-            <input type="text" id="usuario" name="usuario" required placeholder="Digite seu nome">
-            <p></p>
 
-            <iconify-icon icon="material-symbols:lock"></iconify-icon>
-            <label for="senha">Senha</label>
-            <br>
-            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
-            <iconify-icon icon="mdi:eye" id="mostrar-senha"></iconify-icon>
+                <label class="label-form" for="usuario">Nome</label>
+                
+                <div class="input-nome">
+                    <iconify-icon class="icone-form"  icon="mdi:user" height="30"></iconify-icon>
+                    <input class="input-form" type="text" id="usuario" name="usuario" required placeholder="Digite seu nome">
+                </div>
 
-            <p></p>
-            <button type="submit" id="entrar">Entrar</button>
-            <button id="registrar" >Registrar</button>
+                <label class="label-form" for="senha">Senha</label>
+                
+                <div class="input-login">
+                    <iconify-icon class="icone-form" icon="material-symbols:lock" id="icone-senha" height="30"></iconify-icon>
+                    <input class="input-form" type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                    <iconify-icon class="icone-form" icon="mdi:eye" id="icone-olho" height="30"></iconify-icon>
+                </div>
+
+                <button class="botoes-form" type="submit" id="entrar">Entrar</button>
+                <button class="botoes-form" id="registrar" >Registrar</button>
             </form>
         </div>        
     </div>

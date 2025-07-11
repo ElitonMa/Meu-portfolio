@@ -1,5 +1,5 @@
 
-const senhaInvisivel = document.getElementById("mostrar-senha");
+const senhaInvisivel = document.getElementById("icone-olho");
 const inputSenha = document.getElementById("senha");
 let clicouOlho = false;
 
