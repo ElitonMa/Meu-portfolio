@@ -77,3 +77,39 @@
         transform: translateX(0%);
     }
 }
+
+.container-quadrados :nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.container-quadrados :nth-child(2), .container-quadrados :nth-child(3) {
+    border-top: none;
+}
+
+.container-quadrados :nth-child(5) {
+    border-right: none;
+    border-top: none;
+}
+
+.container-quadrados :nth-child(7) {
+    border-left: none;
+}
+
+.container-quadrados :nth-child(11) {
+    border-right: none;
+}
+
+.container-quadrados :nth-child(13) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.container-quadrados :nth-child(15) {
+    border-bottom: none;
+}
+
+.container-quadrados :nth-child(17) {
+    border-right: none;
+    border-bottom: none;
+}
